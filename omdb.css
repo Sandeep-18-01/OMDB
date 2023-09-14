@@ -1,0 +1,98 @@
+.body {
+  background-color: aqua;
+}
+
+.con {
+  background-color: grey;
+  color: black;
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif; /* Add a semicolon here */
+  font-style: oblique;
+  text-align: center;
+  justify-content: center;
+  flex: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  padding: 10%;
+  border-radius: 5%;
+}
+.container {
+  display: none; /* Hide the container by default */
+  background-color: blue;
+  color: whitesmoke;
+  font-size: large;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%; /* Center the container horizontally and provide top margin */
+  border-radius: 5%;
+  padding: 10%;
+  flex-wrap: wrap; /* Allow content to wrap to the next line */
+  max-width: 80%; /* Optional: Limit the container's width to the viewport width */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  flex-direction: row; /* Arrange child elements in a row */
+}
+
+#movieDetails {
+  flex: 1; /* Take up available space */
+  padding: 10px; /* Add spacing between the two divs */
+}
+
+.image {
+  flex: 1; /* Take up available space */
+  padding: 10px; /* Add spacing between the two divs */
+}
+
+.description {
+  font-size: medium;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* font-display: none; */
+  color: beige;
+  visibility: hidden;
+  /* visibility: visible; */
+}
+
+li {
+  margin-left: 20px; /* Adjust the value as needed */
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px; /* Adjust the value as needed to control the spacing between list items */
+}
+
+button {
+  margin-bottom: 5px; /* Adjust the value as needed to control the spacing between buttons */
+  width: auto; /* Allow buttons to size themselves based on content */
+}
+.wishlist-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -20px; /* Adjust this value to control the vertical position */
+}
+
+.wishlist-button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add styling to the delete button */
+.delete-button {
+  background-color: #ff6347; /* Red color for delete button */
+  color: white; /* Text color */
+  padding: 5px 10px; /* Padding inside the button */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  margin-left: 10px; /* Add spacing to the left of the button */
+}
+
+/* Style the container for each wishlist item */
+.wishlist-item {
+  margin-bottom: 10px; /* Add vertical spacing between wishlist items */
+}
